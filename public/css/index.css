@@ -36,7 +36,15 @@ a {
   font-size: 50px;
 }
 
+.banner {
+  height: 400px;
+}
+
 #banner-main {
+  background-image: url("../img/banner-main.jpeg");
+  background-position: center;
+  /* Make the background image cover the area of the <div>, and clip the excess */
+  background-size: cover;
   display: flex;
 }
 
@@ -136,10 +144,19 @@ form {
   display: flex;
   margin: 20px;
   padding: 20px;
+  align-items: center;
+}
+
+#bio-text {
+  width: 70%
+}
+
+.img-container {
+  width: 300px;
 }
 
 #bio-img {
-  width: 30%;
+  width: 100%;
 }
 
 #bio-text {
@@ -183,7 +200,12 @@ textarea {
 }
 
 @media(max-width: 600px) {
+  body {
+    margin: 0px;
+  }
+
   nav {
+    margin: 0px;
     flex-direction: column;
     align-items: center;
   }
@@ -196,6 +218,10 @@ textarea {
   .nav-break {
     display:block;
     width: 80%;
+  }
+
+  #banner-page {
+
   }
 
   #name {
