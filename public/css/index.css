@@ -135,16 +135,18 @@ a:hover {
 
   .nav-link {
     padding: 5px 50px;
+    font-size: 22px;
   }
 
   .nav-break {
     display: block;
-    width: 60%;
+    width: 70%;
   }
 
-  /* #name {
-    font-size: 30px;
-  }   */
+  #name {
+    margin-top: 0px;
+    font-size: 35px;
+  }
 
   .no-mobile {
     display: none;
