@@ -46,11 +46,11 @@ nav {
 }
 
 .fa-facebook {
-  padding: 10px 13px 16px 13px; 
+  padding: 8px 11px 14px 11px; 
 }
 
 .fa-soundcloud {
-  padding: 9px 18px 17px 8px;
+  padding: 7px 16px 15px 6px;
 }
 
 a {
@@ -73,9 +73,8 @@ a:hover {
 
 #name {
   font-size: 40px;
-  margin-top: 40px;
+  margin: 40px;
   text-align: center;
-  padding: 10px;
 }
 
 .banner {
@@ -86,6 +85,37 @@ a:hover {
   background-image: url("../img/banner-main.jpeg");
   background-position: center;
   background-size: cover;
+}
+
+#banner-page {
+  background-image: url("../img/banner-page.jpeg");
+  background-position: bottom left;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 75px;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.page-contents {
+  margin-top: 50px
+}
+
+.media-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.media-item {
+  margin: 20px;
+}
+
+.soundcloud-item {
+  height: 300px;
+  width: 300px;
 }
 
 @media(max-width: 1400px) {
@@ -114,6 +144,10 @@ a:hover {
     margin: 30px; 
   }
 
+  .soundcloud-item {
+    height: 250px;
+    width: 250px;
+  }
 
 }
 
@@ -143,12 +177,26 @@ a:hover {
     width: 70%;
   }
 
+  .fa-facebook {
+    padding: 10px 13px 16px 13px; 
+  }
+  
+  .fa-soundcloud {
+    padding: 9px 18px 17px 8px;
+  }
+
   #name {
     margin-top: 0px;
     font-size: 35px;
   }
 
+  .soundcloud-item {
+    height: 200px;
+    width: 200px;
+  }
+
   .no-mobile {
     display: none;
   }
+
 } 

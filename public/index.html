@@ -10,38 +10,21 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 </head>
 
 <body>
   <header>
 
-    <div class="nav-container">
-      <nav id="upper-nav">
-        <div class="sm" id="sm-nav">
-            <a href="https://www.facebook.com/Robert-Earl-Longley-Music-643973815618328/" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://soundcloud.com/robert-earl-longley" target="_blank" class="fa fa-soundcloud"></a>
-        </div>
-        <hr class="nav-break">
-        <a class="nav-link selected" href="./index.html">Home</a>
-        <hr class="nav-break">
-        <a class="nav-link" href="./music.html">Music</a>
-        <hr class="nav-break">
-        <a class="nav-link" href="./videos.html">Videos</a>
-        <hr class="nav-break">
-        <a class="nav-link" href="./about.html">About</a>
-        <hr class="nav-break">
-        <a class="nav-link" href="./booking.html">Booking</a>
-        <hr class="nav-break">
-      </nav>
-      <div class="sm" id="sm-lower">
-          <a href="https://www.facebook.com/Robert-Earl-Longley-Music-643973815618328/" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://soundcloud.com/robert-earl-longley" target="_blank" class="fa fa-soundcloud"></a>
-      </div>
-    </div>
+    <div class="nav-container" id="upper-nav-container"></div>
 
     <div class="heading-container">
       <h1 id="name">ROBERT EARL LONGLEY</h1>
     </div>
     <div class="banner" id="banner-main"></div>
   </header>
+
+  <!-- Load our React components. -->
+  <script src="upper-nav.js"></script>
 </body>
