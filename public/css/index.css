@@ -150,7 +150,7 @@ a:hover {
 
 .youtube-item {
   position: relative;
-  width: 60%;
+  width: 70%;
   height: 0;
   padding-bottom: 56%;
 }
@@ -162,7 +162,6 @@ a:hover {
   left: 0; top: 0;
 }
 
-
 .page-divide {
   margin: 50px 0px;
 }
@@ -173,10 +172,26 @@ a:hover {
   margin: 15px;
 }
 
+#bio-container {
+  margin: 20px 10%;
+  font-size: 18px;
+}
+
+.img-container {
+  margin: 0px 40px;
+  width: 30%;
+  float: right;
+}
+
+#bio-img {
+  width: 100%;
+}
+
 @media(max-width: 1400px) {
   body {
     width: 90%;
   }
+
 }
 
 @media(max-width: 1000px) {
@@ -199,10 +214,20 @@ a:hover {
     margin: 30px; 
   }
 
-  .youtube-item {
-    width: 70%;
+  #last-p {
+    display: none;
   }
 
+  #bottom-p {
+    display: block;
+  }
+
+}
+
+@media(max-width: 850px) {
+  .img-container {
+    display: none;
+  }
 }
 
 @media(max-width: 600px) {
@@ -266,5 +291,10 @@ a:hover {
   .youtube-item {
     width: 80%;
   }
+/* 
+  #bio-container {
+    margin: 20px 10%;
+    font-size: 14px;
+  } */
 
 } 

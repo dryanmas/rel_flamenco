@@ -8,39 +8,33 @@
   <title>Robert Earl Longley</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 </head>
 
 <body>
   <header>
-
-    <nav>
-      <hr class="nav-break">
-      <a class="nav-link" href="./index.html">Home</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./music.html">Music</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./videos.html">Videos</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./booking.html">Booking</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./about.html">About</a>
-      <hr class="nav-break">
-    </nav>
+    <div class="nav-container" id="upper-nav-container"></div>
     <div class="banner" id="banner-page">
       <h3 class="page-header">About</h3>
     </div>
   </header>
-
-  <div id="bio">
-    <div id="bio-text">
+  
+  <div class="page-contents" id="bio-page">
+    <div id="bio-container">
+      <div class="img-container">
+        <img id="bio-img" src='./img/bio.jpeg'/> 
+      </div>
       <h3>Robert Earl Longley</h3>
-      <p>Robert Earl Longley, also known as "Robby" to his friends and fans, is a world-class level guitarist and symphonic composer. His original compositions include ten of his own CDs, three theatrical films, and a two-hour long improvisational performance to a silent film.  Robert’s concert material is a presentation of masterfully executed fingerstyle techniques on the flamenco guitar that delivers sophisticated melodies in symphonic movements unprecedented on solo guitar. The best way to describe his music is to say that if film composer, Ennio Morriconi had only a guitar at his disposal, he would be Robert Earl Longley.</p>
-    </div>
-    <div class="img-container no-mobile">
-      <img id="bio-img" src='./img/bio.jpeg'/> 
-    </div>
+      <p>Robert Earl Longley, also known as "Robby" to his friends and fans, is a world-class level guitarist and symphonic composer. His original compositions include ten of his own CDs, three theatrical films, and a two-hour long improvisational performance to a silent film.  Robert’s concert material is a presentation of masterfully executed fingerstyle techniques on the flamenco guitar that delivers sophisticated melodies in symphonic movements unprecedented on solo guitar.</p>
 
+      <p>Defying the accepted genres of style, the dogma of tradition to Robert is quite stifling.  Robert’s music is not straight flamenco. Although it sounds Spanish, it is not that. It could have been lifted out of a classical film score, but it wasn't. Its rhythmic improvisations are jazz-like, but it is not jazz. It wrenches your emotions like blues, but it isn't that either.</p>
+
+      <p>Robert grew up in Louisiana, where he was shaped by continuous classical music and traditional flamenco in his home, along with the inescapable influence of jazz and blues from nearby New Orleans. He currently resides in the historic town of Bisbee, AZ, where in addition to his fingerstyle guitar, he has established a production studio. 
+      </p>
+    </div>
   </div>
 
 </body>
