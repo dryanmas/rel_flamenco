@@ -8,55 +8,53 @@
   <title>Robert Earl Longley</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 </head>
 
 <body>
   <header>
-
-    <nav>
-      <hr class="nav-break">
-      <a class="nav-link" href="./index.html">Home</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./music.html">Music</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./videos.html">Videos</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./booking.html">Booking</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./about.html">About</a>
-      <hr class="nav-break">
-    </nav>
+    <div class="nav-container" id="upper-nav-container"></div>
     <div class="banner" id="banner-page">
       <h3 class="page-header">Booking</h3>
     </div>
   </header>
+  
+  <div class="page-contents text-container">
+    <p id="booking-description">Robert Earl Longley performs public and private concerts and events in the Southwest and beyond. Please submit the form below regarding booking and other inquiries.</p>
 
-  <div id=booking-info> 
-    <p>Robert Earl Longley performs concerts and private events in the Southwest and beyond. Please submit the form below regarding booking and other inquiries.</p>
-  </div>
-
-  <form>
-      <div id=form-input>
-        <input type="text" id="input-name" placeholder="Name">
-        <input type="email" id="input-email" placeholder="Email address">
-        <input type="text" id="input-subject" placeholder="Subject">
-        <input type="submit" value="Submit" id="input-submit">
-
-      </div>
-      <div>
-        <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-      </div>  
+    <div id=contact-container>
+      <form id="contact">
+        <fieldset>
+        <input placeholder="Name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <div id="button-container">
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">SUBMIT</button>
+        </div>
+      </fieldset>
     </form>
 
-  <div id="testimonials">
-      <p class="testimonial">“The house concert Robert Longley played here was followed by one of the biggest and most enthusiastic standing ovations we've seen!"  
-      (Russ & Julie's House Concert Series, Moorpark, Ca) 
-    </p>
-      
-  <p class="testimonial">
-      “After watching over 400 individuals, Mr. Longley is the only one with such pure originality and mastery on the guitar.  I can’t get tired of him.  I truly believe he is god-like on that instrument.”  (at Bob Guess Theater, Santee, Ca).
-    </p>
+    <div id="testimonials">
+        <p class="testimonial">“The house concert Robert Longley played here was followed by one of the biggest and most enthusiastic standing ovations we've seen!"  
+        <i>Russ & Julie's House Concert Series, Moorpark, Ca</i>
+      </p>
+        
+    <p class="testimonial">
+        “After watching over 400 individuals, Mr. Longley is the only one with such pure originality and mastery on the guitar.  I can’t get tired of him.  I truly believe he is god-like on that instrument.”  <i>Bob Guess Theater, Santee, Ca</i>
+      </p>
+    </div>
   </div>
+</div>
 
+
+  <script src="upper-nav.js"></script>
 </body>
