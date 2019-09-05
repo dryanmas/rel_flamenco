@@ -8,36 +8,32 @@
   <title>Robert Earl Longley</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 </head>
 
 <body>
   <header>
-
-    <nav>
-      <hr class="nav-break">
-      <a class="nav-link" href="./index.html">Home</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./music.html">Music</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./videos.html">Videos</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./booking.html">Booking</a>
-      <hr class="nav-break">
-      <a class="nav-link" href="./about.html">About</a>
-      <hr class="nav-break">
-    </nav>
+    <div class="nav-container" id="upper-nav-container"></div>
     <div class="banner" id="banner-page">
       <h3 class="page-header">Videos</h3>
     </div>
   </header>
-
-  <div id="videos"> 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bBBtbMBbqe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jIjgk3crOYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cR9UyFXeYKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    
+  
+  <div class="page-contents">
+    <div class="youtube-item media-item">
+      <iframe class="video" src="https://www.youtube.com/embed/cR9UyFXeYKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="media-container" id="youtube">
+      <div class="youtube-item media-item">
+        <iframe class="video" src="https://www.youtube.com/embed/bBBtbMBbqe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-item media-item">
+        <iframe class="video" src="https://www.youtube.com/embed/jIjgk3crOYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
   </div>
-
+  <script src="upper-nav.js"></script>
 </body>

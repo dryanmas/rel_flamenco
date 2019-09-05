@@ -134,21 +134,43 @@ a:hover {
 }
 
 .amazon-item {
-  padding: 5px;
-  width: 22%;
+  margin: 5px; 
+  padding: 2px;
+  width: 27%;
 }
 
 .amazon-img {
   width: 100%;
 }
 
+#youtube {
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtube-item {
+  position: relative;
+  width: 60%;
+  height: 0;
+  padding-bottom: 56%;
+}
+
+.youtube-item iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+
 .page-divide {
-  margin: 75px 0px;
+  margin: 50px 0px;
 }
 
 .section-header {
   text-align: center;
   font-size: 30px;
+  margin: 15px;
 }
 
 @media(max-width: 1400px) {
@@ -175,6 +197,10 @@ a:hover {
     display: flex;
     justify-content: center;
     margin: 30px; 
+  }
+
+  .youtube-item {
+    width: 70%;
   }
 
 }
@@ -235,6 +261,10 @@ a:hover {
   .page-divide {
     margin-left: 15%;
     margin-right: 15%;
+  }
+
+  .youtube-item {
+    width: 80%;
   }
 
 } 
