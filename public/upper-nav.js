@@ -36,9 +36,32 @@ var UpperNav = function (_React$Component2) {
   _inherits(UpperNav, _React$Component2);
 
   function UpperNav() {
+    var _ref;
+
+    var _temp, _this2, _ret;
+
     _classCallCheck(this, UpperNav);
 
-    return _possibleConstructorReturn(this, (UpperNav.__proto__ || Object.getPrototypeOf(UpperNav)).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this2 = _possibleConstructorReturn(this, (_ref = UpperNav.__proto__ || Object.getPrototypeOf(UpperNav)).call.apply(_ref, [this].concat(args))), _this2), _this2.openMenu = function () {
+      var openButton = document.getElementById('open-menu');
+      var nav = document.getElementById('upper-nav');
+
+      console.log('open button', openButton);
+      console.log('nav', nav);
+
+      openButton.style.display = "none";
+      nav.style.display = "flex";
+    }, _this2.closeMenu = function () {
+      var openButton = document.getElementById('open-menu');
+      var nav = document.getElementById('upper-nav');
+
+      openButton.style.display = "flex";
+      nav.style.display = "none";
+    }, _temp), _possibleConstructorReturn(_this2, _ret);
   }
 
   _createClass(UpperNav, [{
@@ -48,12 +71,26 @@ var UpperNav = function (_React$Component2) {
         React.Fragment,
         null,
         React.createElement(
+          "div",
+          { id: "open-menu" },
+          React.createElement(
+            "a",
+            { className: "nav-link", href: "#", onClick: this.openMenu },
+            "Menu"
+          )
+        ),
+        React.createElement(
           "nav",
           { id: "upper-nav" },
           React.createElement(
             "div",
             { className: "sm", id: "sm-nav" },
             React.createElement(SocialMedia, null)
+          ),
+          React.createElement(
+            "a",
+            { className: "nav-link", id: "close-menu", onClick: this.closeMenu, href: "#" },
+            React.createElement("i", { "class": "fa fa-angle-double-up" })
           ),
           React.createElement("hr", { className: "nav-break" }),
           React.createElement(

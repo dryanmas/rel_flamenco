@@ -17,10 +17,14 @@ class UpperNav extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <div id="open-menu">
+          <a className="nav-link" href="#" onClick={this.openMenu}>Menu</a>
+        </div> 
         <nav id="upper-nav">
           <div className="sm" id="sm-nav">
             <SocialMedia />
           </div>
+          <a className="nav-link" id="close-menu" onClick={this.closeMenu} href="#"><i class="fa fa-angle-double-up"></i></a>
           <hr className="nav-break" />
           <a className="nav-link selected" href="./index.html">Home</a>
           <hr className="nav-break" />
@@ -38,6 +42,25 @@ class UpperNav extends React.Component {
       </div>
       </React.Fragment>
     );
+  }
+
+  openMenu = () => {
+    const openButton = document.getElementById('open-menu');
+    const nav = document.getElementById('upper-nav');
+
+    console.log('open button', openButton);
+    console.log('nav', nav);
+
+    openButton.style.display = "none";
+    nav.style.display = "flex";
+  }
+
+  closeMenu = () => {
+    const openButton = document.getElementById('open-menu');
+    const nav = document.getElementById('upper-nav');
+
+    openButton.style.display = "flex";
+    nav.style.display = "none";
   }
 }
 

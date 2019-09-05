@@ -6,6 +6,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;  
 }
 
+#open-menu, #close-menu {
+  display: none;
+}
+
+#close-menu .fa {
+  color: #e0e0eb;
+  background-color: transparent;
+  font-size: 36px; 
+  margin-left: 3px;
+}
+
+#open-menu {
+  justify-content: center;
+}
+
 .nav-container {
   margin: 40px;
 }
@@ -207,8 +222,9 @@ a:hover, #contact button[type="submit"]:hover {
 
 .testimonial {
   margin: 0px;
-  padding: 20px 0px 0px 40px;
+  padding: 40px 0px 0px 40px;
   font-size: 16px;
+  text-align: right;
 }
 
 fieldset {
@@ -303,8 +319,7 @@ fieldset {
   }
 
   .testimonial {
-    padding: 10px 20%;
-    text-align: center;
+    padding: 10px 0px 10px 15%;
   }
 
   #contact {
@@ -323,6 +338,19 @@ fieldset {
   body {
     margin: 0px;
     width: 100%;
+  }
+
+  #open-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  #close-menu {
+    display: block;
+  }
+
+  #upper-nav {
+    display: none;
   }
 
   nav {
