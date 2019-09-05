@@ -18,7 +18,9 @@ class UpperNav extends React.Component {
     return (
       <React.Fragment>
         <div id="open-menu">
-          <a className="nav-link" href="#" onClick={this.openMenu}>Menu</a>
+          <a className="nav-link" href="#" onClick={this.openMenu}>
+          <i class="fa fa-angle-double-down"></i> Menu <i class="fa fa-angle-double-down"></i>
+            </a>
         </div> 
         <nav id="upper-nav">
           <div className="sm" id="sm-nav">

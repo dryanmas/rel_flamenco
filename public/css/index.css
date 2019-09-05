@@ -10,7 +10,11 @@ body {
   display: none;
 }
 
-#close-menu .fa {
+#open-menu a {
+  font-size: 30px
+}
+
+#close-menu .fa, #open-menu .fa {
   color: #e0e0eb;
   background-color: transparent;
   font-size: 36px; 
