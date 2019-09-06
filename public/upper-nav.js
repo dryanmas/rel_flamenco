@@ -76,8 +76,7 @@ var UpperNav = function (_React$Component2) {
           React.createElement(
             "a",
             { className: "nav-link", href: "#", onClick: this.openMenu },
-            React.createElement("i", { "class": "fa fa-angle-double-down" }),
-            " Menu ",
+            "Menu ",
             React.createElement("i", { "class": "fa fa-angle-double-down" })
           )
         ),

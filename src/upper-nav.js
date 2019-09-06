@@ -19,7 +19,7 @@ class UpperNav extends React.Component {
       <React.Fragment>
         <div id="open-menu">
           <a className="nav-link" href="#" onClick={this.openMenu}>
-          <i class="fa fa-angle-double-down"></i> Menu <i class="fa fa-angle-double-down"></i>
+          Menu <i class="fa fa-angle-double-down"></i>
             </a>
         </div> 
         <nav id="upper-nav">
